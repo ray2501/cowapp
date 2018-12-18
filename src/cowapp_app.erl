@@ -21,7 +21,7 @@ start(_StartType, _StartArgs) ->
 	     {"/get/:id", simple_handler, [get]},
 	     {"/add/:title", simple_handler, [add]},
 	     {"/update/:id/:title", simple_handler, [update]},
-	     {"/delete/:id", simple_handler, []}
+	     {"/delete/:id", simple_handler, [delete]}
 	]}
     ]),
     {ok, _} = cowboy:start_clear(my_http_listener,
